@@ -30,12 +30,8 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={DefaultTheme}>
-      <Stack
-        screenOptions={({ route }) => ({
-          headerShown: !route.name.startsWith("tempobook"),
-        })}
-      >
-        <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

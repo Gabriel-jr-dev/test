@@ -11,7 +11,7 @@ import LanguagePackages from '@/components/LanguagePackages';
 import Store from '@/components/Store';
 import { AVAILABLE_LANGUAGES, searchTranslation } from '@/data/languages';
 import { Translation, SearchHistory, Favorite, StoreItem, Language } from '@/types/dictionary';
-import '../global.css';
+import '../../global.css';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState('');
